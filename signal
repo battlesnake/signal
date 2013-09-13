@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Install this to your PATH (e.g. /usr/bin). and `chmod +x` it.
+
+# When doing a large bash job (e.g. `tar -cJf /mnt/backups/homedir.txz /home`),
+# append this to your command (e.g. `large-bash-job; another-large-job; signal`).
+# When your command completes, scroll lock will start flashing.
+
+# To quit this, `Ctrl+C`
+
+while true;
+do
+        xset led 3
+        sleep 0.15
+        xset -led 3
+        sleep 0.2
+done
